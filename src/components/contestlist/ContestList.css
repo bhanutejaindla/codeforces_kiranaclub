@@ -1,0 +1,184 @@
+ContestList.css
+.contest-list {
+    padding: 20px;
+    background-color: #2C3E50;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: white;
+  }
+  .navbar-menu {
+    display: flex;
+    gap: 20px;
+  }
+  .navbar-search select{
+    height: 40px;
+    border-radius: 4px;
+    margin-left: 10px;
+  }
+  .b1, .b2 {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 10px;
+  }
+  .b1{
+    background-color: #3498db; /* Blue for Contest */
+  }
+  .b2{
+    background-color: #e74c3c; /* Red for Favorite */
+  }
+ 
+  .filters input,
+  .filters select {
+    padding: 8px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contest-list-items {
+    list-style: none;
+    padding: 20px;
+    margin:20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.9375rem;
+  }
+  
+  .contest-item {
+    padding: 10px;
+    background-color:rgba(211, 211, 211, 0.228);
+    max-width: 200px; /* Set a max width for consistency */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    align-items: center;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 10px;  
+
+  }
+  .contest-item:hover{
+      transform: scale(1.05); /* Slight zoom effect on hover */
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  
+  }
+  .contest-item img{
+  border-radius: 10px;
+  height: 105px;
+  width: 100%;
+  }
+  .phase-finished {
+    color: green; /* or any other color for FINISHED */
+    font-weight: bold;
+  }
+  
+  .phase-before {
+    color: orange; /* or any other color for BEFORE */
+    font-weight: bold;
+  }
+  
+  .phase-coding {
+    color: red; /* or any other color for CODING */
+    font-weight: bold;
+  }
+  
+  .details{
+    align-items: center;
+  }
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .pagination_pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+  
+  .pagination_pages span {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  .pagination_pages select {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .pagination_pages select:hover {
+    background-color: #eee;
+  }
+  .pagination button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .pagination button:disabled {
+    cursor: not-allowed;
+    background-color: #f5f5f5;
+  }
+  
+  /* ContestList.css */
+
+/* Container for the graph */
+/* ContestList.css */
+
+.graph-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.graph-container h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.graph-container .recharts-wrapper {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.graph-container .recharts-cartesian-axis-x {
+    font-size: 0.875rem;
+    color: #555;
+}
+
+.graph-container .recharts-cartesian-axis-y {
+    font-size: 0.875rem;
+    color: #555;
+}
+
+.recharts-tooltip-item {
+    font-size: 0.875rem;
+}
+
+.recharts-legend-item {
+    font-size: 0.875rem;
+    color: #333;
+}
